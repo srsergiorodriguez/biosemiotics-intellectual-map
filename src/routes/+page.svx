@@ -31,6 +31,9 @@
 
     // visualizations
     articleTypesData = await csv(`${base}/data/ArticleTypesSummary.csv`, autoType);
+
+    console.log(`${base}/data/ArticleTypesSummary.csv`);
+    console.log(articleTypesData);
     citationCountData = await csv(`${base}/data/MostCitedPapers.csv`, autoType);
 
     doc2VecClustersData = await csv(`${base}/data/BiosemioticsDoc2VecClustersTagged.csv`, autoType);
