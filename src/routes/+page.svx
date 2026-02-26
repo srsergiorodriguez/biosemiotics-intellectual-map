@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { csv, tsv, autoType } from "d3";
+  import { base } from '$app/paths';
 
   import VectorsViz from '$lib/components/VectorsViz.svelte';
   import HierarchyViz from '$lib/components/HierarchyViz.svelte';
@@ -29,20 +30,20 @@
   onMount(async () => {
 
     // visualizations
-    articleTypesData = await csv(`/data/ArticleTypesSummary.csv`, autoType);
-    citationCountData = await csv(`/data/MostCitedPapers.csv`, autoType);
+    articleTypesData = await csv(`${base}/data/ArticleTypesSummary.csv`, autoType);
+    citationCountData = await csv(`${base}/data/MostCitedPapers.csv`, autoType);
 
-    doc2VecClustersData = await csv(`/data/BiosemioticsDoc2VecClustersTagged.csv`, autoType);
-    cocitationNodes = await tsv(`/data/CocitationNodes.tsv`, autoType);
-    cocitationLinks = await tsv(`/data/CocitationLinks.tsv`, autoType);
-    biblioCouplingNodes = await tsv(`/data/BiblioCouplingNodes.tsv`, autoType);
-    biblioCouplingLinks = await tsv(`/data/BiblioCouplingLinks.tsv`, autoType);
+    doc2VecClustersData = await csv(`${base}/data/BiosemioticsDoc2VecClustersTagged.csv`, autoType);
+    cocitationNodes = await tsv(`${base}/data/CocitationNodes.tsv`, autoType);
+    cocitationLinks = await tsv(`${base}/data/CocitationLinks.tsv`, autoType);
+    biblioCouplingNodes = await tsv(`${base}/data/BiblioCouplingNodes.tsv`, autoType);
+    biblioCouplingLinks = await tsv(`${base}/data/BiblioCouplingLinks.tsv`, autoType);
 
     // tables
-    authorCountData = await csv(`/data/TableAuthorCount.csv`, autoType);
-    citationWithinData = await csv(`/data/TableCitationWithin.csv`, autoType);
-    keywordData = await csv(`/data/TableKeywords.csv`, autoType);
-    citationGeneralData = await csv(`/data/TableCitationGeneral.csv`, autoType);
+    authorCountData = await csv(`/${base}data/TableAuthorCount.csv`, autoType);
+    citationWithinData = await csv(`${base}/data/TableCitationWithin.csv`, autoType);
+    keywordData = await csv(`${base}/data/TableKeywords.csv`, autoType);
+    citationGeneralData = await csv(`${base}/data/TableCitationGeneral.csv`, autoType);
 
     ready = true;
   });

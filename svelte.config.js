@@ -9,6 +9,9 @@ const config = {
 		strict: true,
 		hydrate: true,
 	}) },
+	paths: {
+		base: process.argv.includes('dev') ? '' : '/biosemiotics-intellectual-map'
+	},
 	preprocess: [mdsvex()],
 	extensions: ['.svelte', '.svx'],
 	alias: {
