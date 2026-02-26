@@ -1,0 +1,9 @@
+:root {
+  --main-font: 'Arial', sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+  margin: 0;
+  padding: 0;
+}
