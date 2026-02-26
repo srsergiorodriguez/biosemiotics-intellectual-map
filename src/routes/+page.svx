@@ -31,9 +31,6 @@
 
     // visualizations
     articleTypesData = await csv(`${base}/data/ArticleTypesSummary.csv`, autoType);
-
-    console.log(`${base}/data/ArticleTypesSummary.csv`);
-    console.log(articleTypesData);
     citationCountData = await csv(`${base}/data/MostCitedPapers.csv`, autoType);
 
     doc2VecClustersData = await csv(`${base}/data/BiosemioticsDoc2VecClustersTagged.csv`, autoType);
@@ -43,7 +40,7 @@
     biblioCouplingLinks = await tsv(`${base}/data/BiblioCouplingLinks.tsv`, autoType);
 
     // tables
-    authorCountData = await csv(`/${base}data/TableAuthorCount.csv`, autoType);
+    authorCountData = await csv(`${base}/data/TableAuthorCount.csv`, autoType);
     citationWithinData = await csv(`${base}/data/TableCitationWithin.csv`, autoType);
     keywordData = await csv(`${base}/data/TableKeywords.csv`, autoType);
     citationGeneralData = await csv(`${base}/data/TableCitationGeneral.csv`, autoType);
