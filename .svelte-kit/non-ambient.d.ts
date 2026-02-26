@@ -36,6 +36,6 @@ declare module "$app/types" {
 		};
 		Pathname(): "/";
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
-		Asset(): "/data/ArticleTypesSummary.csv" | "/data/BiblioCouplingLinks.tsv" | "/data/BiblioCouplingNodes.tsv" | "/data/BiosemioticsDoc2VecClustersTagged.csv" | "/data/CocitationLinks.tsv" | "/data/CocitationNodes.tsv" | "/data/MostCitedPapers.csv" | "/data/TableAuthorCount.csv" | "/data/TableCitationGeneral.csv" | "/data/TableCitationWithin.csv" | "/data/TableKeywords.csv" | "/robots.txt" | string & {};
+		Asset(): "/.nojekyll" | "/data/ArticleTypesSummary.csv" | "/data/BiblioCouplingLinks.tsv" | "/data/BiblioCouplingNodes.tsv" | "/data/BiosemioticsDoc2VecClustersTagged.csv" | "/data/CocitationLinks.tsv" | "/data/CocitationNodes.tsv" | "/data/MostCitedPapers.csv" | "/data/TableAuthorCount.csv" | "/data/TableCitationGeneral.csv" | "/data/TableCitationWithin.csv" | "/data/TableKeywords.csv" | "/robots.txt" | string & {};
 	}
 }
