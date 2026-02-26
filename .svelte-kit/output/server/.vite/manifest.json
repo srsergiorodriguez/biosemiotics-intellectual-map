@@ -104,6 +104,10 @@
       "_shared.js"
     ]
   },
+  "src/lib/assets/favicon.ico": {
+    "file": "_app/immutable/assets/favicon.DgM8h-DZ.ico",
+    "src": "src/lib/assets/favicon.ico"
+  },
   "src/routes/+layout.js": {
     "file": "entries/pages/_layout.js",
     "name": "entries/pages/_layout",
@@ -121,6 +125,9 @@
     ],
     "css": [
       "_app/immutable/assets/_layout.C93xg0HH.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/favicon.DgM8h-DZ.ico"
     ]
   },
   "src/routes/+page.svx": {
