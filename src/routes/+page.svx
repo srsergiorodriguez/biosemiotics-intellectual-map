@@ -53,7 +53,7 @@
 
   <div class="main-title">
 
-    # An intellectual map of the Biosemiotics Journal 
+    # An intellectual map of the journal Biosemiotics 
 
     #### Interactive dashboard
 
@@ -61,7 +61,7 @@
 
 ## How to use this dashboard
 
-This interactive dashboard serves as a companion to the paper *An intellectual map of the Biosemiotics Journal: authors, topics and concepts* (INSERT URL WHEN PUBLISHED). While the manuscript details the theoretical and methodological frameworks used to map the *Biosemiotics* journal, this space allows you to directly explore the underlying data. 
+This interactive dashboard serves as a companion to the paper *An intellectual map of the journal Biosemiotics: authors, topics and concepts* (INSERT URL WHEN PUBLISHED). While the manuscript details the theoretical and methodological frameworks used to map the *Biosemiotics* journal, this space allows you to directly explore the underlying data. 
 
 The dashboard is divided into three sections: macroscopic summary insights (aggregate metrics), granular relationships (topological networks) and network dynamics. 
 
