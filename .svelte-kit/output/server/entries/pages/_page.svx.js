@@ -46,7 +46,7 @@ function getTextLines_(maxWidth, text, template = (cont) => cont.append("text"))
 readable(getTextLines_);
 function _page_svx($$payload, $$props) {
   push();
-  $$payload.out.push(`<div class="general svelte-1tyyng2"><div class="main-title svelte-1tyyng2"><h1>An intellectual map of the Biosemiotics Journal</h1> <h4>Interactive dashboard</h4></div> <h2>How to use this dashboard</h2> <p>This interactive dashboard serves as a companion to the paper <em>An intellectual map of the Biosemiotics Journal: authors, topics and concepts</em> (INSERT URL WHEN PUBLISHED). While the manuscript details the theoretical and methodological frameworks used to map the <em>Biosemiotics</em> journal, this space allows you to directly explore the underlying data.</p> <p>The dashboard is divided into three sections: macroscopic summary insights (aggregate metrics), granular relationships (topological networks) and network dynamics.</p> <hr/> <h2>Macroscopic summary insights</h2> <p>These metrics establish a baseline overview of the journal’s dynamics, highlighting the most prolific researchers, the foundational vocabulary, and the distribution of article types. They represent the stabilized, aggregate output of the discipline over its seventeen-year history.</p> <h4>Article Types</h4> <p>This chart visualizes the distribution of article types within the journal. The high prevalence of original research articles demonstrates the field’s continuous empirical output, while the significant presence of target articles and peer commentaries reflects the community’s structural commitment to theoretical debate pointing out to the boundaries of the field.</p> `);
+  $$payload.out.push(`<div class="general svelte-1xhuffi"><div class="main-title svelte-1xhuffi"><h1>An intellectual map of the journal Biosemiotics</h1> <h4>Interactive dashboard</h4></div> <h2>How to use this dashboard</h2> <p>This interactive dashboard serves as a companion to the paper <em>An intellectual map of the journal Biosemiotics: authors, topics and concepts</em> (INSERT URL WHEN PUBLISHED). While the manuscript details the theoretical and methodological frameworks used to map the <em>Biosemiotics</em> journal, this space allows you to directly explore the underlying data.</p> <p>The dashboard is divided into three sections: macroscopic summary insights (aggregate metrics), granular relationships (topological networks) and network dynamics.</p> <hr/> <h2>Macroscopic summary insights</h2> <p>These metrics establish a baseline overview of the journal’s dynamics, highlighting the most prolific researchers, the foundational vocabulary, and the distribution of article types. They represent the stabilized, aggregate output of the discipline over its seventeen-year history.</p> <h4>Article Types</h4> <p>This chart visualizes the distribution of article types within the journal. The high prevalence of original research articles demonstrates the field’s continuous empirical output, while the significant presence of target articles and peer commentaries reflects the community’s structural commitment to theoretical debate pointing out to the boundaries of the field.</p> `);
   {
     $$payload.out.push("<!--[!-->");
   }
@@ -86,7 +86,7 @@ function _page_svx($$payload, $$props) {
   {
     $$payload.out.push("<!--[!-->");
   }
-  $$payload.out.push(`<!--]--> <p>Last update 24/02/26</p></div>`);
+  $$payload.out.push(`<!--]--> <p>Last update 13/05/26</p></div>`);
   pop();
 }
 export {
