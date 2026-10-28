@@ -54,10 +54,9 @@
   <div class="main-title">
 
     # An intellectual map of the journal Biosemiotics 
+    ### Interactive Dashboard
 
-    ### By Sergio Rodríguez Gómez
-
-    #### Interactive dashboard
+    #### By Sergio Rodríguez Gómez — 2026
 
   </div>
 
