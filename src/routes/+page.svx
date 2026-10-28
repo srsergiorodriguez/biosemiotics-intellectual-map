@@ -55,6 +55,8 @@
 
     # An intellectual map of the journal Biosemiotics 
 
+    ### By Sergio Rodríguez Gómez
+
     #### Interactive dashboard
 
   </div>
@@ -71,7 +73,7 @@ The dashboard is divided into three sections: macroscopic summary insights (aggr
 
 These metrics establish a baseline overview of the journal's dynamics, highlighting the most prolific researchers, the foundational vocabulary, and the distribution of article types. They represent the stabilized, aggregate output of the discipline over its seventeen-year history.
 
-#### Article Types
+#### Article types
 
 This chart visualizes the distribution of article types within the journal. The high prevalence of original research articles demonstrates the field's continuous empirical output, while the significant presence of target articles and peer commentaries reflects the community's structural commitment to theoretical debate pointing out to the boundaries of the field.
 
@@ -79,7 +81,7 @@ This chart visualizes the distribution of article types within the journal. The 
   <BarChart data={articleTypesData} category="type" value="count" />
 {/if}
 
-#### Authors by Publication Volume
+#### Authors by publication volume
 
 This table identifies the researchers who have published most frequently within the journal. These authors often function as the structural pillars of the field, maintaining its internal cohesion.
 
@@ -87,7 +89,7 @@ This table identifies the researchers who have published most frequently within 
   <CsvDataTable rawData={authorCountData} />
 {/if}
 
-#### Most Cited Articles within Biosemiotics
+#### Most cited articles within biosemiotics
 
 This table highlights the papers published *by* the journal that have accumulated the most internal citations. We could interpret these texts as points of passage for the community, establishing a shared canon and signaling which theoretical interventions have successfully stabilized into accepted biosemiotic frameworks.
 
@@ -95,7 +97,7 @@ This table highlights the papers published *by* the journal that have accumulate
   <CsvDataTable rawData={citationWithinData} />
 {/if}
 
-#### Keyword Frequencies
+#### Keyword frequencies
 
 By aggregating the most frequently used keywords, this table provides a preliminary index of the discipline's core vocabulary. The salience of terms like *Umwelt*, *semiosis*, and *emergence* underscores the shared interpretive frameworks that unite the journal's diverse empirical studies.
 
@@ -103,7 +105,7 @@ By aggregating the most frequently used keywords, this table provides a prelimin
   <CsvDataTable rawData={keywordData}/>
 {/if}
 
-#### Most Cited Bibliography
+#### Most cited bibliography
 
 This table lists the references most frequently cited across all *Biosemiotics* articles. It reveals the historical depth of the field, showcasing the foundational texts (e.g., Uexküll, Peirce, Hoffmeyer), scaffolding contemporary texts, and external scientific paradigms that provide the conceptual basis for modern biosemiotic research.
 
@@ -117,7 +119,7 @@ This table lists the references most frequently cited across all *Biosemiotics* 
 
 Moving beyond aggregate statistics, these visualizations map the structural topography of the journal. Using document embeddings and citation network analysis, they reveal how topics and authors group together to form the metatheoretical core, dense research mountains, and boundary-spanning frontiers of the discipline.
 
-#### A Taxonomy of Biosemiotics Articles
+#### A taxonomy of biosemiotics articles
 
 This dendrogram represents the hierarchical taxonomy derived from the Doc2Vec semantic clustering. It illustrates how 19 highly specific sub-fields (such as bioacoustics or plant semiotics) aggregate into 10 broader domains, which finally resolve into the 5 foundational macro-categories of biosemiotics. Numbers in parentheses represent the quantity of papers that belong to each category in the dataset.
 
@@ -125,7 +127,7 @@ This dendrogram represents the hierarchical taxonomy derived from the Doc2Vec se
   <HierarchyViz data={doc2VecClustersData} />
 {/if}
 
-#### Semantic Topography (Doc2Vec Clusters)
+#### Semantic topography (Doc2Vec Clusters)
 
 This dispersion plot maps the semantic similarities between articles based on their shared vocabulary. 
 
@@ -135,7 +137,7 @@ This dispersion plot maps the semantic similarities between articles based on th
   <VectorsViz data={doc2VecClustersData} />
 {/if}
 
-#### Bibliographic Coupling Network
+#### Bibliographic coupling network
 
 Bibliographic coupling links articles based on shared reference lists, visualizing the epistemic communities of the journal. Exploring this network allows you to identify deep, internally coherent research niches (*mountains*) alongside outward-facing discussions that engage with external scientific debates (*frontiers*).
 
@@ -145,7 +147,7 @@ Bibliographic coupling links articles based on shared reference lists, visualizi
   <VosNetwork nodes={biblioCouplingNodes} links={biblioCouplingLinks} dense={true}/>
 {/if}
 
-#### Co-citation Network
+#### Co-citation network
 
 While bibliographic coupling maps concepts, co-citation maps the social infrastructure of the researchers themselves by linking authors who are frequently cited together. Within this network, look for *hubs*, authors who command concentrated attention within specific niches, and *bridges*, scholars who connect disparate domains to maintain the discipline's cohesion.
 
@@ -155,9 +157,9 @@ While bibliographic coupling maps concepts, co-citation maps the social infrastr
 
 ---
 
-## Network Dynamics
+## Network dynamics
 
-#### Citation Distribution
+#### Citation distribution
 
 This histogram visualizes the distribution of citation frequencies across the journal's corpus. It prominently displays a, so-called, long-tail distribution characteristic of scale-free networks. In such networks, a small number of foundational papers act as highly connected hubs, accumulate the vast majority of citations due to preferential attachment, while the majority of articles are cited only a few times. This underlying mathematical asymmetry is precisely what generates the dense topographical mountains and the stabilized metatheoretical core visualized in the networks above.
 
