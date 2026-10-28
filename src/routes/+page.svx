@@ -61,7 +61,7 @@
 
 ## How to use this dashboard
 
-This interactive dashboard serves as a companion to the paper *An intellectual map of the journal Biosemiotics: authors, topics and concepts* (INSERT URL WHEN PUBLISHED). While the manuscript details the theoretical and methodological frameworks used to map the *Biosemiotics* journal, this space allows you to directly explore the underlying data. 
+This interactive dashboard serves as a companion to the paper *An intellectual map of the journal Biosemiotics: authors, topics and concepts* [https://doi.org/10.1007/s12304-026-09652-2](https://doi.org/10.1007/s12304-026-09652-2). While the manuscript details the theoretical and methodological frameworks used to map the *Biosemiotics* journal, this space allows you to directly explore the underlying data. 
 
 The dashboard is divided into three sections: macroscopic summary insights (aggregate metrics), granular relationships (topological networks) and network dynamics. 
 
@@ -165,7 +165,7 @@ This histogram visualizes the distribution of citation frequencies across the jo
   <Histogram data={citationCountData} value="cited" />
 {/if}
 
-Last update 13/05/26
+Last update 27/10/26
 
 </div>
 
